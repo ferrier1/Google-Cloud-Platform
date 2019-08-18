@@ -5,7 +5,7 @@ A load balancer is used to direct traffic to a server that has capacity to give 
 
 Below is an example of a external LB as it handles requests directly from users.
 
-![external_lb.png](attachments/3291ade9-4058-4ff3-a565-591d6d136665/9b5b5448.png)
+![external_lb.png](attachments/9b5b5448.png)
 
 Internal LB's handle traffic from other instances on your network.
 
@@ -23,7 +23,7 @@ Internal LB's handle traffic from other instances on your network.
 
 Below is a digram of the categories of load balancers offered by GCP.
 
-![lb_types_diagram.png](attachments/3291ade9-4058-4ff3-a565-591d6d136665/d0fed95c.png)
+![lb_types_diagram.png](attachments/d0fed95c.png)
 
 
 As a general rule, always load balance at the highest layer possible in the OSI Stack.
