@@ -7,12 +7,10 @@ The need for compute options becomes apparent when you get to situations when yo
 
 ![compute_option_gce.png](attachments/22f4085f-4705-4019-ae02-9c972f32d4cc/59138f6e.png)
 
-
 Here we have a load of backend instances doing separate tasks, each one doing different types of computational processing or accessing a DB layer.
 Now there are clear differences between the operations being carried out by the different parts of the web app. This is where you would like a higher level of control on load balancing and scaling yourself.
 This represents a typical IaaS, you would have a load of VM instances and you can set them up however you want. Configuration, administration and management is all your responsibility.
 This sounds like an on premise scenario but there are clear differences. You don’t need to buy machines or install an OS and auto-scaling is taken care of. You simple specify the OS, dev stack, languages etc. the **IaaS** option on GCP is called **Google Compute Engine.**
-
 
 ### Hosting with Compute Engine
 
