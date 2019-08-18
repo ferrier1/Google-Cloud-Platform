@@ -5,7 +5,7 @@ Protects your VM instances from unapproved connections, both ingress and egress.
 
 <https://cloud.google.com/vpc/docs/firewalls>
 
-![firewall_01.png](attachments\0c43431e.png)
+![firewall_01.png](attachments/0c43431e.png)
 
 
 In the example above we have a VPC with multiple subnets configures, the subnets and resources within the subnets can communicate with each other using hostnames and internal IP's. The DNS on this network knows the hostnames and IP address mapping for each host. The VPC also has a route to and from every instance on the network.

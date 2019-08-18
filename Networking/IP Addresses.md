@@ -39,7 +39,7 @@ A single service on a VM requires just one IP address. Multiple services running
 
 Subnets have primary and secondary CIDR ranges. Use IP aliasing to set up multiple IP addresses drawn from the primary or secondary CIDR range.
 
-![alias_range.png](attachments\7470cb93.png)
+![alias_range.png](attachments/7470cb93.png)
 
 In the example above the subnet has a primary and secondary IP range. The VM on the left takes its primary IP address from the primary range and the containerized services running on the VM are using the secondary range.
 This allows for each container running on the VM to have its own IP address useable on the network.

@@ -1,45 +1,40 @@
 # Cloud VPN
 
-
-
 ## Three Interconnection Options
-
 
 Once a GCP VPC has been created, there are three options to connect the VPC to on-premise networks or network with another cloud provider:
 
 - **VPN using cloud router:**
 
-  - This is a secure VPN tunnel between cloud router and on-premise network.
+    - This is a secure VPN tunnel between cloud router and on-premise network.
 
-  - Can also be configured with static routes instead of cloud router - more manual overhead.
+    - Can also be configured with static routes instead of cloud router - more manual overhead.
 
 - **Dedicated Interconnect:**
 
-  - This is a physical connection between VPC and on-premise network.
+    - This is a physical connection between VPC and on-premise network.
 
-  - Data transfer can be much higher than VPN and costs can be lower.
+    - Data transfer can be much higher than VPN and costs can be lower.
 
 - **Direct and Carrier Peering:**
 
-  - Enterprise grade connection to allow for hybrid cloud workloads.
+    - Enterprise grade connection to allow for hybrid cloud workloads.
 
-  - **Direct Peering:**
+    - **Direct Peering:**
 
-    - Direct from on-premise network to VPC.
+        - Direct from on-premise network to VPC.
 
-  - **Carrier Peering:**
+    - **Carrier Peering:**
 
-    - 3rd party (usually internet carrier) facilitates the peering.
-
+        - 3rd party (usually internet carrier) facilitates the peering.
 
 ## VPN
 
-
--   Connects your on-premise network to Google VPC. Traffic is secured in an IPSec tunnel after being encrypted at one end by the VPN gateway and then decrypted at the other end by another VPN gateway.
--   Offers 99.9% service availability SLA.
--   Supports **site-to-site VPN**. This allows multiple sites to establish VPN tunnel to same cloud VPN gateway and VPC.
--   Supports both static and dynamic routes for traffic between on-premise and cloud. Dynamic routing is done via the cloud router running BGP with the on-premise router. When the network changes automatic updates are send.
--   Max speed of 1.5Gbps
+- Connects your on-premise network to Google VPC. Traffic is secured in an IPSec tunnel after being encrypted at one end by the VPN gateway and then decrypted at the other end by another VPN gateway.
+- Offers 99.9% service availability SLA.
+- Supports **site-to-site VPN**. This allows multiple sites to establish VPN tunnel to same cloud VPN gateway and VPC.
+- Supports both static and dynamic routes for traffic between on-premise and cloud. Dynamic routing is done via the cloud router running BGP with the on-premise router. When the network changes automatic updates are send.
+- Max speed of 1.5Gbps
 
 
 
