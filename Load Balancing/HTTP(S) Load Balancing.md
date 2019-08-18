@@ -59,7 +59,7 @@ Session affinity:
 
 Cross-Region load balancing allows you to set up a global IP address that can intellengently route users based on proximity. If backends in the local region closet to the user do not have capacity, then they are forwarded to the next closest region. 
 
-![https_x_region.PNG](attachments/5a7e0277-b03c-4760-843e-f5ae60508b88/2e3308a4.PNG)
+![https_x_region.PNG](attachments/2e3308a4.PNG)
 
 
 #### Content Based
@@ -67,4 +67,4 @@ Cross-Region load balancing allows you to set up a global IP address that can in
 Based on the requested HTTP(S) URL, you can direct the request to different backends.
 This is path based using URL paths.
 
-![https_content.PNG](attachments/5a7e0277-b03c-4760-843e-f5ae60508b88/7a08f600.PNG)
+![https_content.PNG](attachments/7a08f600.PNG)
