@@ -43,7 +43,7 @@ Once a GCP VPC has been created, there are three options to connect the VPC to o
 
 
 
-![vpn_gcp.png](attachments\5f29666f.png)
+![vpn_gcp.png](attachments/5f29666f.png)
 
 
 The above diagram shows a remote network (remote because it's not GCP VPC) on the right connecting to GCP via VPN. This remote network can either be another cloud VPC or an on-premise network. Only IPSec gateway to gateway tunnels are supported, this will not work with client software on a PC (AnyConnect). There must be a dedicated VPN gateway on the client side. Cloud VPN also does not work with SSL VPN connections, the client VPN gateway must support the full suite of IPSec protocols. 
