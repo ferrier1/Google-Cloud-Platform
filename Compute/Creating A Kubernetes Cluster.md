@@ -7,14 +7,14 @@ To create a cluster called my-first-cluster with 1 node:
 ```bash
 gcloud container clusters create my−first−cluster −−num−nodes 1
 ```
-![cluster_create.png](attachments/1f74a22a-755f-408e-8db7-d2b6aa933e3e/0a3fc203.png)
+![cluster_create.png](attachments/0a3fc203.png)
 
 Because container clusters are simply a load of VM instances running together in some configuration you can use gcloud compute commands to verify:
 
 ```bash
 gcloud compute instances list
 ```
-![compute_instance_list.png](attachments/1f74a22a-755f-408e-8db7-d2b6aa933e3e/51f35c53.png)
+![compute_instance_list.png](attachments/51f35c53.png)
 
 Now that there is a cluster up and running we can deploy something to it. In this case we will deploy a WordPress Docker container to the single node cluster. This is a publicly available image. We want this application to run over port 80. This tutum image contains everything needed to run a wordpress site including a SQL database.
 
@@ -31,7 +31,7 @@ We can see the status of the current pods with the following:
 kubectl get pods
 ```
 
-![kube_get_pods.png](attachments/1f74a22a-755f-408e-8db7-d2b6aa933e3e/6ead86fa.png)
+![kube_get_pods.png](attachments/6ead86fa.png)
 
 
 The status is ready  - 1/1 - running. We only have 1 container in the pod.
