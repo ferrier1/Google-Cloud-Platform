@@ -1,2 +1,2 @@
-# Google-Cloud_platform
+# Google-Cloud-Platform
 Notes for GCP
