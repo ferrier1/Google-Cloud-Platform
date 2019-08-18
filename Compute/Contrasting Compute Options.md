@@ -9,9 +9,7 @@ Using the same case study as below, all the compute options have been analysed.
 The first two options are very basic storage based options, followed by the three important compute options on GCP.
 
 
-
-| <h3> App Engine </h3> |  <h3> Container Engine </h3> | <h3> Compute Engine</h3> |
-| <h4>PaaS     </h4>       |<h4>  Hybrid Service   </h4>  | <h4> IaaS         </h4>           |
+| <h4>PaaS -  App Engine  </h4>       |<h4>  Hybrid Service  - Kubernetes Engine </h4>  | <h4> IaaS  -  Compute Engine     </h4>           |
 |:---------------------------|:-------------------------------|:--------------------------------|
 |  A flexible, zero ops (serverless) platform for building highly available apps. Should be used if high availability is very important as it removes the operation of scaling up and down additional instances. | Logical infrastructure powered by Kubernetes. You don’t need to manage individual containers but you do need to work with Kubernetes. This abstracts a lot of DevOps infrastructure work but some is still necessary. | VM's running in Googles global DC network. You are directly responsible for everything.
 | You only want to focus on writing code, and never want to toucher a server, cluster or any infrastructure. | You want to deploy apps very fast and improve operability by separating the app from the OS. | You need very granular control over infrastructure and direct access to high-performance hardware such as GPU's and local SSD's.
