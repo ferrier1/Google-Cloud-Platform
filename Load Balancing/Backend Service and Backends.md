@@ -65,7 +65,7 @@ Backends can be VM instances that are part of an instance group, or they can be 
 
 Below is a simple architecture diagram of how HTTP(S) load balancing with backend buckets.
 
-![backend_buckets.png](attachments/28f0221e-ccd1-450d-803b-88c270b95b39/03a55cd6.png)
+![backend_buckets.png](attachments/03a55cd6.png)
 
 
 Customers or clients on the left can be distributed across the word.

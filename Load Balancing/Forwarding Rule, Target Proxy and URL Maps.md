@@ -109,4 +109,4 @@ detach
 
 URL Maps can be complex and granular as shown below.
 
-![complex_url_map.png](attachments/8fa5954d-fde7-4504-b2f6-64b574012390/b43b4796.png)
+![complex_url_map.png](attachments/b43b4796.png)

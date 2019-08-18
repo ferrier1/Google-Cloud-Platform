@@ -1,7 +1,7 @@
  # Network Load Balancing
  
  
- ![lb_types_diagram.png](attachments/9b6e0c13-34b7-436f-98ef-b32450e3617e/a294d0d4.png)
+ ![lb_types_diagram.png](attachments/a294d0d4.png)
  
 As the above diagram shows, the network load balancer is external meaning it deals with traffic from the internet, but it is regional. The instances to which it distributes traffic are located in a single region.
  

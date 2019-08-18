@@ -10,7 +10,7 @@ An internal load balancer recieved traffic from the **internal** network and the
    
 Here is a block diagram of a regional internal load balancer that serves traffic to VM instances on a subnet.
   
-  ![internal_lb.PNG](attachments/6bdd7680-c5ec-43c1-8275-36d142e544c3/c37e3dae.PNG)
+  ![internal_lb.PNG](attachments/c37e3dae.PNG)
 
 The backend is a single subnet in the us-central region. The instances in this subnet are served by the internal load balancer. Instances can be in seperate subnets as long as they are within the same VPC and region.
 The backend instances have been split among 2 zones.
@@ -76,4 +76,4 @@ The ILB on GCP behaves a bit differently to traditional proxy internal load bala
 Below is an example use case where global users connect to the front end using an external HTTP(S) load balancer. Front end instances are connected to the backend instances using an **internal load balancer**
 
 
-![3-tier-ilb.PNG](attachments/6bdd7680-c5ec-43c1-8275-36d142e544c3/df6b3076.PNG)
+![3-tier-ilb.PNG](attachments/df6b3076.PNG)

@@ -29,7 +29,7 @@ SSL operates in the session layer, below the application layer therefore less pr
 
 Here is a block diagram of SSL proxy load balancing
 
-![ssl_proxy.PNG](attachments/5d563eaa-b159-41a3-a1f6-07f1185ab571/c02c71af.PNG)
+![ssl_proxy.PNG](attachments/c02c71af.PNG)
 
 1. Users have a secure connection to the SSL proxy. 
 2. This is external traffic and it hits the global SSL proxy load balancer VIP. (**Global external load balancing**)
@@ -62,7 +62,7 @@ Here is a block diagram of SSL proxy load balancing
 
 Here is a block diagram of TCP proxy load balancing
    
-  ![tcp_proxy.PNG](attachments/5d563eaa-b159-41a3-a1f6-07f1185ab571/c50eda2c.PNG)
+  ![tcp_proxy.PNG](attachments/c50eda2c.PNG)
   
   It looks very similar to SSL proxy, but the traffic is not encrypted.
   

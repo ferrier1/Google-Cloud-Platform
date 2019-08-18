@@ -62,7 +62,7 @@ Stackdriver provides a load of common metrics that are available for any VM inst
 
 Here is a block diagram example of how a autoscaler works with a backend service for HTTP(S) load balancing.
 
-![backend_autoscaler.PNG](attachments/90f23333-cba9-4790-a3bf-d2b264d920a2/29645e71.PNG)
+![backend_autoscaler.PNG](attachments/29645e71.PNG)
 
 Within the autoscaler you will set a **target-utilization** level, in this case 0.8. This autoscaler interacts with the instance group manager that manages the instance group that is part of the backend service. Within the backend service, you configure one of the metrics, either **maxRatePersistance** as is the case here or **cpuUtilization** level.
 
