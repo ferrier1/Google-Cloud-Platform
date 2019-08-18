@@ -8,7 +8,6 @@
 |:-------------------------------|:-----------------|:----------------------|
 | Fast scanning, NoSQL | HBase, Cassandra (columnar database) | BigTable | 
 
-
 - BigTable is similar to HBase.
 - Unlike Datastore, BigTable is very fast at scanning sequential key values, not random lookups.
 - Columnar database, good for sparse data.
@@ -18,4 +17,5 @@
 - Low-latency
 - Scales well.
 - Cost-effective.
-- Bigtable is able to support over a petabyte of data and is useful for high-speed analytics as well, whereas Datastore is not.
+- Bigtable is able to support over a petabyte of data and is useful for high-speed analytics as well, where as Datastore is not.
+  

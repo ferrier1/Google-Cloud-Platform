@@ -24,6 +24,6 @@ Can do cloud storage federation.
 
 BigQuery is fully managed data warehouse for analytics.
 
-#### Quota
+### Quota
 
 BigQuery's quota on max rows per second per project is 100,000 when streamins inserts.
