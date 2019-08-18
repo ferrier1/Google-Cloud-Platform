@@ -15,7 +15,7 @@ The shared VPC allows for cross project networking(spans multiple projects). It 
 Creates a VPC network of 1918 address space that associated projects can use.
 Firewall rules and policies apply to all projects on the network. This is not the case with interconnects, each end of the interconnect has their own firewall rules.
 
-![shared_vpc.png](attachments\a6398af6.png)
+![shared_vpc.png](attachments/a6398af6.png)
 
 In the above example, there are four projects, Host Project, Service Project 1, Service Project 2 and a Standalone Project. The dotted red line represents the shared VPC connection. The two service projects don’t have a network of their own as they use the host projects. The standalone project has its own network as its not using cross project networking. 
 
@@ -47,7 +47,7 @@ There are a few basic rules to follow when setting up a shared VPC:
 
 A standard use case for a shared VPC is a two-tier web service.
 
-![two_tier_web_service.png](attachments\7cd1c19f.png)
+![two_tier_web_service.png](attachments/7cd1c19f.png)
 
 In this example a different team owns the Tier 1 and Tier 2 services. 
 An external client hits the external LB and then the front end of the web service, the request is then load balanced to the database backend. Tier 1 and 2 are in different projects but belong in the same network as they are both a part of an application.

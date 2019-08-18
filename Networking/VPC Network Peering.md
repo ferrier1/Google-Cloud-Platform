@@ -36,7 +36,7 @@ There are several reasons to use VPC network peering as opposed to using externa
 
 Internal load balancing is within a particular region.
 
-![vpc_peering_lb.png](attachments\d508e9e9.png)
+![vpc_peering_lb.png](attachments/d508e9e9.png)
 
 In the above diagram, network-B is peered with two networks, network-A and network-C. Network-A has a load balancer in it, it will load balance all traffic to all VM instances that connect to it. The load balancer in network-A will automatically apply to the VM instances network-B with no additional configuration required. The load balancer will basically treat the VM instances in network-B as if they were in network-A.
 
@@ -44,7 +44,7 @@ Network-C is not directly peered with network-A so instances in each cannot comm
 
 ## Peered Networks and Firewalls
 
-![vpc_peering_fw.png](attachments\e2c9de85.png)
+![vpc_peering_fw.png](attachments/e2c9de85.png)
 
 In the above diagram, the two networks are peered together using VPC peering. The VM instances can talk to each other using internal IP addresses. Firewall rules are configured and managed separately in each network. The administrator of network-B can decide that subnet-3 is not allowed to receive traffic from subnet-1 and subnet-2.
 Firewall rules are very important in VPC peering's as they are the only way of blocking access to certain instances. Peering networks allows access to all instances in the network.
@@ -52,12 +52,12 @@ Firewall rules are very important in VPC peering's as they are the only way of b
 ## Peered Networks and Shared VPC's
 
 
-![vpc_peering_shared_vpc.png](attachments\5569da9c.png)
+![vpc_peering_shared_vpc.png](attachments/5569da9c.png)
 
 Host project P1 in the above diagram has a shared VPC with two service projects attached. The peering to project P2 is completely legit and behaves just like any other VPC peering. All the VM's in the diagram can communicate using internal IP addresses. Direct peering between two shared VPC's is also possible.
 
 ## Peered Networks and Multiple NIC's
 
-![vpc_peering_multiple_nic.png](attachments\90ee6527.png)
+![vpc_peering_multiple_nic.png](attachments/90ee6527.png)
 
 In the above diagram VM1 has two NIC's, one in network-A and one in network-B each has an IP address for its respective network. IP2 belongs to network-B the other network interface IP1 belongs to network-A.  Network-B and network-C are peered with each other. All instances in network-C can access IP2 on VM1** but not IP1**. **Network-A is standalone, not peered**. IP3 and IP2 can communicate with each other. IP1 on network-A cannot see any instances in network-B or network-C.

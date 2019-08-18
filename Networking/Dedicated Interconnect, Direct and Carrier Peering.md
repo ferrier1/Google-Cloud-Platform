@@ -8,7 +8,7 @@ Because the dedicated interconnect is a physical connection, the throughput can 
 The dedicated interconnect does not use the internet and has high bandwidth this can sometimes be more cost effective that using a high bandwidth internet connection and VPN.
 A single dedicated interconnect connection has a bandwidth of 10Gbps. A maximum of 8 connections is supported between on-premise and VPC network.
 If you do not need a throughput of 10Gbps then a cloud VPN might be more suitable. Data is not encrypted over the dedicated interconnect, if data security is required then application layer encryption is needed.
-![dedicated_interconnect.png](attachments\e5912f6b.png)
+![dedicated_interconnect.png](attachments/e5912f6b.png)
 
 
 The above diagram shows two networks connected using a dedicated interconnect the interconnect exists in a colocation facility where the on-premise network and googles network meet physically. The link will be a single or multiple 10Gbps link. If you have multiple links to google or links to different devices, you must create separate interconnects. Google offers a list of colocation facilities to peer with google.

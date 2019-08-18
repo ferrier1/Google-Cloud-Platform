@@ -7,7 +7,6 @@ They promise to provide a reliable, low-latency lookup for your domain from anyw
 - No burden of managing your own server.
 - Every Cloud DNS instance lives within a project.
 
-
 ## Managed Zone
 
 A managed zone is an entity that manages DNS records for a given suffix (example.com). It is maintained by the cloud DNS. Exactly the same as a normal zone.
@@ -15,6 +14,7 @@ A managed zone is an entity that manages DNS records for a given suffix (example
 ## Record Types
 
 Just like a regular DNS server there are several record types:
+
 - A - Address record, maps hostnames to IPv4 addresses.
 - SOA - Start of authority - specifies authoritative information on a managed zone. This record is created when you create your managed zone for a particular suffix.
 - MX - Mail exchange is used to route requests to mail servers.
