@@ -8,8 +8,14 @@
 
 SQL is important in this case due to the masses of analytics businesses to with data. Business analysts who write SQL to generate reports for analytics will use BigQuery for this.
 
-- 
+## Hive Comparison
+
 - Much faster with **lower latency than Hive** due to proprietary columnar data format. This makes it an option for real time processing, something Hive would never be used for. **DataStore and BigTable have lower latency that BigQuery however.**
+
+## Features
+
+- Fully managed, NoOps, data warehousing
+- Extreme high capacity data warehouse used for analytics
 - **Its not ACID complient** so cant be used for transaction processing (OLTP).
 - Good for analytics/business intelligence/data warehousing (OLAP).
     - OLTP requires strict write consistency (ACID), OLAP does not.
