@@ -22,7 +22,7 @@ It measures the latency (specifically in loading times) as your app goes through
 
   - Real-time error monitoring and alerting of your application
   - Quickly understand errors
-  - Write to stackdriver logging or error reportint API (beta)
+  - Write to stackdriver logging or error reporting API (beta)
   - Automatic and real-time analysis
     - Alerts and dashboards
   - Built into App Engine standard and Cloud Functions - automatically enabled
