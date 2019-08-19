@@ -23,6 +23,6 @@ Ideal for random lookups, non sequential.
 - Indexes are very fast to read, but slow to write
     - Dont use for write intensive applications
 
-## Update
+## Firestore
 
-**Firestore** is now considered a superset of Datastore and should be used for new projects
+**Firestore** is considered a superset of Datastore and should be used for new projects

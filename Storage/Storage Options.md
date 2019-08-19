@@ -56,3 +56,4 @@
 - Getting data into Cloud Storage - Transfer Service
 
 
+![storage_options.svg](attachments/3hf75ape.svg)
