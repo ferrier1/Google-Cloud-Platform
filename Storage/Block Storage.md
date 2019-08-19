@@ -15,6 +15,12 @@ Block storage points:
 - Meant for use from VM's (GCE). No human or application is going to be dealing directly with blocks. It is consumed by CPU's carrying out low level I/O operations.
 - Location is tied to the VM location.
 - Data is stored in volumes (called blocks).
+- Offers multi-reader mounting
+    - Many VM's can read data from the same disk with no performance degredation
+- Snapshots are gro-replicatied and available for restore in all regions by default
+- Able to resize while in use
+- Automatic encryption
+- Each disk can be 64TB in size
 
 ## Storage area network (SAN)
 
