@@ -16,6 +16,7 @@ SQL is important in this case due to the masses of analytics businesses to with 
 
 - Fully managed, NoOps, data warehousing
 - Extreme high capacity data warehouse used for analytics
+- Big data exploration and processing
 - **Its not ACID complient** so cant be used for transaction processing (OLTP).
 - Good for analytics/business intelligence/data warehousing (OLAP).
     - OLTP requires strict write consistency (ACID), OLAP does not.
