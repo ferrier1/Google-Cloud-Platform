@@ -15,7 +15,7 @@ Datastore was the origional App Engine database
 - NoOps
 - **Alternative to MongoDB**
 - Key-value structure - flexible schema definition
-- Typically not used for OLTP or OLAP
+- **Typically not used for OLTP or OLAP**
 - Fast lookup on keys is the primary use case. **Very fast hash based indexes**
 - Scales from 0 to terabytes in size
     - Very cost effective
