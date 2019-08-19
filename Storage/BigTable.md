@@ -17,11 +17,18 @@
 - Scales well.
 - Cost-effective.
 - Bigtable is able to support over a petabyte of data and is useful for high-speed analytics as well, where as Datastore is not.
-- Compared to Datstore:
-    - More ideal for analytics
-    - Much more expensive
-    - Requires to manage nodes
-        - Not to the same extent as Cloud SQL
+
+### Compared to Datstore
+
+- More ideal for analytics
+- Much more expensive
+- Requires to manage nodes
+    - Not to the same extent as Cloud SQL
+  
+#### Performance
+
+Probably the most performant of all the managed database offerings on GCP
+
 - Extreme high performance at a cost - pay wheather using nodes or not
     - Almost unlimited scalability
     - Very high volume of writes
