@@ -1,10 +1,6 @@
 # Cloud SQL + Cloud Spanner
 
-
-<br>
 Both of these are relational databases with triggers, constraints, lots of structure, tables, entity relationships etc...
-<br>
-<br>
 
 - **Cloud SQL is open source**
 - **Cloud Spanner is proprietary**
@@ -14,7 +10,7 @@ Both of these are relational databases with triggers, constraints, lots of struc
 
 Generally if datasets are really massive and un-structured, use BigQuery. For write critical, small, structured datasets, use Cloud SQL or Spanner.
 
-Spanner offeres **horizontal scaling** - Add more and more instances to support growing datasets. 
+Spanner offeres **horizontal scaling** - Add more and more instances to support growing datasets.
 
 Cloud SQL uses either Postgres or MySQL storeage engines.
 

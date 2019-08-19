@@ -1,0 +1,24 @@
+# Cloud SQL
+
+- Hosted MySQL or PostgreSQL database
+- Direct *lift and shift* of either of the above databases
+    - Minimal modification required
+    - Exact same use case and interaction as with on-premise implementations of these RDBMS
+- Traditional relational database (SQL)
+- Often a first step in a cloud migration
+- Managed, but still need to provision individual machines
+    - Managed single Compute Engine VM
+    - Many similarities to configuring a GCE instance
+- What components are managed?
+    - OS/database install and updates
+    - Storage capacity can autoscale for the VM
+        - Able to set limit
+    - Backups
+    - Failover
+    - Read replicas
+- Limitations
+    - Cap of 10TB of storage for a single Cloud SQL instance
+        - If on-prem MySQL database in greater than 10TB, you will either need to shard it into multiple instances or use another managed database offering
+    - Limited in horizontal scalability
+        - Can add more compute to a single instance
+        - Cant increase number of instances (read replicas only)
