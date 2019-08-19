@@ -18,15 +18,16 @@
 
 ### Use Cases
 
-| <h4>When you need: </h4>| <h4>Use</h4> |<h4>GCP Tool</h4>|
-|:-------------------------------|:-----------------|:----------------------|
-| Storage for Compute, Block Storage | Persistent (hard disks or SSD) | Persistent (hard disks or SSD) | 
-| Storing media, Blob Storage | File system - maybe HDFS | Cloud Storage |
-| SQL interface on top of data  | Hive (SQL-like, but really its MapReduce on HDFS) | BigQuery |
-| Document database, NoSQL | CouchDB, MongoDB (key-value/indexed database) | DataStore |
-| Fast scanning, NoSQL | HBase, Cassandra (columnar database) | BigTable | 
-| Transaction Processing (OLTP) | RDBMS | Cloud SQL, Cloud Spanner | 
-| Analytics/Data Warehouse (OLAP) | Hive (SQL-like, but really its MapReduce on HDFS) | BigQuery |
+| <h4>When you need: </h4>|<h4>Example</h4>| <h4>Use</h4> |<h4>GCP Tool</h4>|
+|:-------------------------------|:-------|:-----------------|:----------------------|
+| Storage for Compute, Block Storage | Structured block data, SAN| Persistent (hard disks or SSD) | Persistent (hard disks or SSD) | 
+| Storing media, Blob Storage |Unstructured, blob data | File system - maybe HDFS | Cloud Storage |
+| SQL interface on top of data, Analytics/Data Warehouse (OLAP)  |Large scale data analytics, data processing using SQL| Hive (SQL-like, but really its MapReduce on HDFS) | BigQuery |
+| Document database, Semi-structured, NoSQL | Game State, inventories, user profile | CouchDB, MongoDB (key-value/indexed database) | DataStore/Firestore | 
+| Fast scanning, NoSQL, high throughput analytics |Graphs, IoT data, finance | HBase, Cassandra (columnar database) | BigTable | 
+| Structured data | Medical records, Blog| RDBMS | Cloud SQL | 
+| Transaction Processing (OLTP) | Global retail shop | RDBMS + scalability |  Cloud Spanner | 
+
 
 
 ### Mobile-Specific Use Cases
