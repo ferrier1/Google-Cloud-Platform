@@ -2,7 +2,7 @@
 
 ## Trace
 
-  - Fine performance bottlenecks - latency 
+  - Find performance bottlenecks - latency 
   - Collects data from GAE, HTTP(s) load balancers, or apps with Stackdriver trace SDK
   - Integrated with App Engine Standard - automatically enabled
   - Available for GCE, GKE and GAE flex
