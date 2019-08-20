@@ -23,6 +23,7 @@ Datastore was the origional App Engine database
 - Good choice for web/mobile apps
 - **ACID transactions**
 - SQL-like query language (GQL)
+- Can be **global in scope**
 
 ## Datastore Query Performance
 
