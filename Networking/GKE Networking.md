@@ -10,3 +10,20 @@ It enables the connectivity between all pods in a VPC without the overhead of st
 Kubernetes makes very liberal use of IP addresses. This simplifies the system and makes it easier to use. This makes IP address management a challenge however.
 
 VPC Native mode solves this issue by providing the ability to define, up front cluster scale requirements. This allowes Kubernetes to reduce its overall IP footprint.
+
+## IP Addresses
+
+The Kubernetes networking model relies heavily on IP addresses. Services, Pods, Containers, and nodes communicate using IP addresses.
+
+- **Cluster IP** - The IP address assigned to a Service. This address is stable for the lifetime of the Service.
+- **Pod IP** - The IP address assigned to a given Pod. This is ephemeral.
+- **Node IP** - The IP address assigned to a given node.
+
+## Subnets
+
+Following subnet resources required:
+
+- Subnet for the Nodes
+    - Secondary range for Pods - non-routeable
+    - Secondary range for Services
+- Master CIDR /28 range for VPC peer - non-routeable outside VPC
