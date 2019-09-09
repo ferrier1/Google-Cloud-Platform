@@ -23,7 +23,20 @@ The Kubernetes networking model relies heavily on IP addresses. Services, Pods, 
 
 Following subnet resources required:
 
-- Subnet for the Nodes
+- Primary Subnet for the Nodes
     - Secondary range for Pods - non-routeable
     - Secondary range for Services
 - Master CIDR /28 range for VPC peer - non-routeable outside VPC
+
+### Nodes
+
+Node IP's are taken from the primary range of the subnet associated with the cluster
+
+### Pods
+
+Each Node, by default allocates a /24 block from the Pod address range.
+It is possible to configure Nodes to allocate a specific range of IPs for nodes to limit the number of pods each node can run.
+
+### Services
+
+Each cluster needs to reserve a range of IP's for Kubernetes Service cluster IP addresses.
