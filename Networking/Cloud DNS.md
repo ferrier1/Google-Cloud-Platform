@@ -37,6 +37,8 @@ A private zone is a container of DNS records that can only be queried by one or 
 A private zone can only be queried by resources in the same project where it is defined. Possible to override this restriction using **DNS peering**.
 To use private zones with Shared VPC you must create your private zone in the host project, and you must add the appropriate Shared VPC network to the list of authorized networks for that zone.
 
+Private zones do not support DNS security extensions (DNSSEC) or custom resource record sets of type NS.
+
 ### Forwarding Zones
 
 A forwarding zone is a type of Cloud DNS **private zone** that sends requests for that zone to the IP address of its forwarding targets.
